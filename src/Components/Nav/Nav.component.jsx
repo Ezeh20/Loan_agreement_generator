@@ -1,6 +1,5 @@
 import { Outlet, Link } from "react-router-dom"
 import man from "../../assets/img//man.png"
-import Footer from "../Footer/Footer.component"
 import "./Nav.scss"
 
 const Nav = () => {
@@ -14,12 +13,11 @@ const Nav = () => {
                             <span>M</span>an</h2>
                     </Link>
                     <Link to="/form">
-                        <button className="btn-generate">Generate</button>
+                        <button className="btn-generate">Get Started</button>
                     </Link>
                 </nav>
             </header>
             <Outlet />
-            <Footer/>
         </div>
     )
 }

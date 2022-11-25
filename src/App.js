@@ -2,7 +2,6 @@ import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Nav from "./Components/Nav/Nav.component";
 import Homepage from "./Components/Homepage/homepage.component";
-import Agree from "./Routes/Agreements/Agreements.component";
 import Condition from "./Components/Agreement-options/text.component";
 import Condition2 from "./Components/Agreement-options/text2.component";
 import Form from "./Components/Form/form.component";
@@ -40,12 +39,9 @@ function App() {
             />
           }
         />
-        <Route
-          path="/generate"
-          element={<Agree data={form}/>}
-        />
-        <Route path="/con1" element={<Condition />} />
-        <Route path="/con2" element={<Condition2 />} />
+        
+        <Route path="/contract" element={<Condition  data={form}/>} />
+        <Route path="/contract-2" element={<Condition2  data={form}/>} />
       </Route>
     </Routes>
   );

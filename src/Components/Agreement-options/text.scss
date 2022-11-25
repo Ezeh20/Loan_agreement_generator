@@ -1,0 +1,106 @@
+.head {
+    margin-top: 5rem;
+
+    .Titlee {
+        text-align: center;
+    }
+
+    .agreement {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4rem;
+        row-gap: 2.5rem;
+
+        .contract {
+            line-height: 1.8rem;
+            text-align: justify;
+
+            span {
+                font-weight: 700;
+                color: #09A398;
+            }
+        }
+
+        .second-part {
+            line-height: 1.8rem;
+            text-align: justify;
+
+            span {
+                font-weight: 700;
+                color: #09A398;
+            }
+        }
+
+        .signature {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 4rem;
+
+            .sender {
+                display: flex;
+                flex-direction: column;
+
+                .line {
+                    display: flex;
+                    width: 5rem;
+                    height: 2px;
+                    background-color: #09A398;
+                }
+
+                .send {
+                    margin-top: .5rem;
+                    align-self: center;
+                }
+
+                span {
+                    color: #09A398;
+                    font-weight: 700;
+                    font-size: 1.3rem;
+                }
+            }
+
+            .receiver {
+                display: flex;
+                flex-direction: column;
+
+                .line {
+                    display: flex;
+                    width: 6rem;
+                    height: 2px;
+                    background-color: #09A398;
+                }
+
+                .receive {
+                    margin-top: .5rem;
+                    align-self: center;
+                }
+
+                span {
+                    color: #09A398;
+                    font-weight: 700;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .head {
+        .agreement {
+            .signature {
+                .sender {
+                    .line {
+                        width: 12rem;
+                    }
+                }
+                .receiver{
+                    .line{
+                        width: 12rem;
+                    }
+                }
+            }
+        }
+    }
+}

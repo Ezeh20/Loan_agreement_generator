@@ -10,8 +10,8 @@
     flex-direction: column;
     row-gap: 2rem;
     padding: 3rem 2rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 
     .first {
         display: flex;
@@ -25,7 +25,8 @@
         flex-direction: column;
 
         .form-input {
-            
+            font-size: 1rem;
+            color: #78797c;
             &:focus ~ .label{
                 top: -25px;
                 font-size: 14px;
@@ -70,10 +71,19 @@
         background-color: #45c2b9;
         font-size: 1.3rem;
         color: #fff;
+        &:hover{
+            cursor: pointer;
+            background-color: #31a79f;
+        }
     }
 }
 
-
+.shrink {
+    top: -25px;
+    font-size: 14px;
+    transition: all .2s;
+    opacity: .7;
+}
 
 input,
 select {
