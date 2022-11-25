@@ -1,6 +1,7 @@
 import "./homepage.scss"
 import { needed } from "./static"
 import { Link } from "react-router-dom"
+import Footer from "../Footer/Footer.component"
 
 const Homepage = () => {
     return (
@@ -33,6 +34,7 @@ const Homepage = () => {
                     <button className="btn-generate">Get Started</button>
                 </Link>
             </section>
+            <Footer />
         </div>
     )
 }
@@ -40,52 +42,3 @@ const Homepage = () => {
 export default Homepage
 
 
-/**
- *  <div className="needed">
-                    <div className="">
-                        <i className="ri-user-2-fill icons"></i>
-                        <p className="details">The lender</p>
-                    </div>
-                    <p className="details-text">The lender is the party giving the money to the borrower on the condition that the principal will be repaid at an agreed date with
-                        or without intrest as the case maybe</p>
-                </div>
-                <div className="needed">
-                    <div className="">
-                        <i className="ri-user-5-fill icons"></i>
-                        <p className="details">The Borrower</p>
-                    </div>
-                    <p className="details-text">The borrower accepts the money from the lender having accepted to the lender's conditions </p>
-                </div>
-
-                <div className="needed">
-                    <div className="">
-                        <i className="ri-money-dollar-box-line icons"></i>
-                        <p className="details">The Principal</p>
-                    </div>
-                    <p className="details-text">The borrower accepts the money from the lender having accepted to the lender's conditions </p>
-                </div>
-
-                <div className="needed">
-                    <div className="">
-                        <i className="ri-calendar-event-line icons"></i>
-                        <p className="details">The Principal</p>
-                    </div>
-                    <p className="details-text">The borrower accepts the money from the lender having accepted to the lender's conditions </p>
-                </div>
-
-                <div className="needed">
-                    <div className="">
-                        <i className="ri-calendar-check-line icons"></i>
-                        <p className="details">The Principal</p>
-                    </div>
-                    <p className="details-text">The borrower accepts the money from the lender having accepted to the lender's conditions </p>
-                </div>
-
-                <div className="needed">
-                    <div className="">
-                        <i className="ri-percent-fill icons"></i>
-                        <p className="details">The Principal</p>
-                    </div>
-                    <p className="details-text">The borrower accepts the money from the lender having accepted to the lender's conditions </p>
-                </div>
- */

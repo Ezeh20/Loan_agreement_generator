@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom"
 import { useState } from "react"
 import "./form.scss"
-import { Value } from "sass"
+import Footer from "../Footer/Footer.component"
+
 const Form = ({ form, bs }) => {
 
     //navigate the user to the loan agreement generated page
@@ -17,9 +18,12 @@ const Form = ({ form, bs }) => {
         waiver: ""
     };
 
-    const [formInput, setFormInput] = useState(defaultForm)
-    const { Sender, Receiver, Amount } = formInput
 
+
+    const [formInput, setFormInput] = useState(defaultForm)
+    const { Sender, Receiver, Amount, mood } = formInput
+
+    console.log(formInput)
     const onChange = event => {
         const { name, value } = event.target
         setFormInput({ ...formInput, [name]: value })
@@ -30,7 +34,13 @@ const Form = ({ form, bs }) => {
     const onSubmit = e => {
         e.preventDefault()
         form(formInput)
-        navigate("/generate")
+        if (mood === "mercy") {
+            navigate("/contract")
+        } else if (mood === "wickedness") {
+            navigate("/contract-2")
+        } else {
+            return
+        }
     }
 
     return (
@@ -42,15 +52,15 @@ const Form = ({ form, bs }) => {
                         <div className="first">
                             <div className="form-field">
                                 <input type="text" name="Sender" value={Sender} onChange={onChange} required className="form-input" />
-                                <label htmlFor="Sender" className="label">Sender</label>
+                                <label htmlFor="Sender" className={`label ${Sender.length ? "shrink" : ""}`}>Sender</label>
                             </div>
                             <div className="form-field">
                                 <input type="text" name="Receiver" value={Receiver} onChange={onChange} required className="form-input" />
-                                <label htmlFor="Receiver" className="label">Receiver</label>
+                                <label htmlFor="Receiver" className={`label ${Receiver.length ? "shrink" : ""}`}>Receiver</label>
                             </div>
                             <div className="form-field">
                                 <input type="number" name="Amount" value={Amount} onChange={onChange} required className="form-input" />
-                                <label htmlFor="Amount" className="label">Amount</label>
+                                <label htmlFor="Amount" className={`label ${Amount.length ? "shrink" : ""}`}>Amount</label>
                             </div>
                         </div>
                         <div className="an">
@@ -95,10 +105,11 @@ const Form = ({ form, bs }) => {
                             </select>
                         </div>
 
-                        <button className="btn-submit">Submit</button>
+                        <button className="btn-submit">Generate</button>
                     </form>
                 </div>
             </header>
+            <Footer/>
         </div>
     )
 }
