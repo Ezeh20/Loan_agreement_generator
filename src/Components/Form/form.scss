@@ -1,0 +1,84 @@
+.footer-heading {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.form {
+    border: 2px solid #45c2b9;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 3rem 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    .first {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+
+    .form-field {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        .form-input {
+            
+            &:focus ~ .label{
+                top: -25px;
+                font-size: 14px;
+                transition: all .2s;
+               opacity: .7;
+            }
+        }
+
+        .label {
+            font-size: .9rem;
+            position: absolute;
+            pointer-events: none;
+            bottom: 0;
+        }
+    }
+
+    .an {
+        display: flex;
+        justify-content: space-between;
+        font-size: .9rem;
+    }
+
+    .field-another {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        column-gap: .2rem;
+    }
+
+    .label-2 {
+        font-size: .9rem;
+    }
+
+    .select {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-submit {
+        padding: 1rem 2rem;
+        border: none;
+        background-color: #45c2b9;
+        font-size: 1.3rem;
+        color: #fff;
+    }
+}
+
+
+
+input,
+select {
+    border: none;
+    border-bottom: 1px solid #45c2b9;
+    padding-top: .5rem;
+    outline: none;
+}
