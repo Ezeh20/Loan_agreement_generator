@@ -30,6 +30,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Nav />}>
         <Route index element={<Homepage />} />
+        <Route path="/home" element={<Homepage />} />
         <Route
           path="/form"
           element={
