@@ -1,17 +1,16 @@
+import Condition from "../../Components/Agreement-options/text.component"
+import Condition2 from "../../Components/Agreement-options/text2.component"
 
+const Agree = ({ data }) => {
 
-const Agree = ({cc, muu}) =>{
-    const {Sender, Receiver, Amount} = cc
-
-   
-
-    return(
+    return (
         <div>
-            <h1>final</h1>
-            <h2>{Sender}</h2>
-            <h2>{Receiver}</h2>
-            <h2>{Amount}</h2>
-            <h2>{muu}</h2>
+            {
+                data.mood === "mercy" ? <Condition /> : data.mood === "wickedness" ? <Condition2 /> : ""
+            }
+           <h2>{data.rate}</h2>
+           <h2>{data.startDate}</h2>
+           <h2>{data.dueDate}</h2>
         </div>
     )
 }

@@ -1,0 +1,84 @@
+.Footer {
+    background-color: #09A398;
+    width: 100%;
+
+    .foot {
+        padding: 3rem 0;
+        color: #eee;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+
+        .mainn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .logo {
+                font-size: 1rem;
+                color: #eee;
+
+                .man {
+                    width: 35px;
+                    height: 35px;
+                    object-fit: cover;
+                }
+            }
+
+            .form-link {
+                color: #eee;
+                margin-top: .9rem;
+            }
+        }
+
+        .copy {
+            display: flex;
+            color: #eee;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+}
+
+@media screen and (min-width: 620px) {
+    .Footer {
+        .foot {
+            .mainn {
+                .logo {
+                    font-size: 1.3rem;
+                    .man {
+                        width: 55px;
+                        height: 55px;
+                        object-fit: cover;
+                    }
+                }
+                .form-link{
+                    font-size: 1.3rem;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .Footer {
+        .foot {
+            .mainn {
+                .logo {
+                    font-size: 1.5rem;
+                    .man {
+                        width: 65px;
+                        height: 65px;
+                        object-fit: cover;
+                    }
+                }
+                .form-link{
+                    font-size: 1.5rem;
+                }
+            }
+
+        }
+    }
+}
