@@ -4,11 +4,13 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
+import Scroll from "./Components/Scroll/Scroll";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Loan_agreement_generator/">
+      <Scroll />
       <App />
     </BrowserRouter>
   </React.StrictMode>

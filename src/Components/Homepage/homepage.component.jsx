@@ -7,8 +7,8 @@ const Homepage = () => {
     return (
         <div>
             <section className="section-1 container">
-                <p className="title-text">Middle Man is a loan agrement generator who also doubles as a third party that bares witness for both parties
-                    a contract is generated where one party "lender" lends to another "borrower" a sum of money to be repaid on or before the agreed date.
+                <p className="title-text">Middle Man is a loan agrement generator who also doubles as a third party that bares witness for both parties.
+                    A contract is drafted where one party "lender" lends to another "borrower" a sum of money to be repaid on or before the agreed date.
                 </p>
                 <p className="title-text-alt">The contract outlines the parties involved in the agreement, the amount which is loaned, the intrest rate and other necessary information</p>
             </section>
