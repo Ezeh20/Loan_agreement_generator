@@ -13,7 +13,7 @@ const Condition = ({ data }) => {
     return (
         <div>
             <div className="head container">
-                <h1 className="Titlee">Loan Agremment</h1>
+                <h1 className="Titlee">Loan Agreemment</h1>
 
                 <section className="container-3 agreement">
                     <p className="contract">
@@ -24,7 +24,7 @@ const Condition = ({ data }) => {
                         amount to reach <span>{Receiver}</span>.
                     </p>
                     <p className="second-part">
-                        Middle Man doubles as a third party who will bare withness in court if <span>{Receiver}</span> defaults and als responsible for debt collection if need be. 
+                        Middle Man doubles as a third party who will bare withness in court if <span>{Receiver}</span> defaults and also responsible for debt collection if need be. 
                         <span>{Sender}</span> is willing to forgive <span>{Receiver}</span> for a period of 1 month if the said amount plus interest is not paid on or before <span>{dueDate}</span>,
                         due to the goodness of <span>{Sender}</span>'s heart, no penalty charge will be added for the first 2 months after <span>{dueDate}</span> but will request 2 % for each month
                         that passes after the grace of 2 months.

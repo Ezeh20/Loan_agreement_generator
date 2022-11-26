@@ -11,7 +11,7 @@ const Condition2 = ({ data }) => {
     return (
         <div>
             <div className="head container">
-                <h1 className="Titlee">Loan Agremment</h1>
+                <h1 className="Titlee">Loan Agreemment</h1>
 
                 <section className="container-3 agreement">
                     <p className="contract">
@@ -25,7 +25,7 @@ const Condition2 = ({ data }) => {
                         Due to the high increase in loan defaulters, <span>{Sender}</span> has entrusted Middle Man to draft out this contract, Middle Man acts as a third party who
                         will bare withness in court if <span>{Receiver}</span> defaults and also responsible for debt collection if need be. There is a penalty charge of <span>+5%</span>
                         for each month <span>{Receiver}</span> defaults after <span>{dueDate}</span>, that means failure to repay the loan after 3 months sums up to <span>+15%</span> penalty
-                        charge. If after 3 months and <span>{Receiver}</span> still hasn't still repaid the loan, Middle Man has been given the authorization to collect the debt using legal means.
+                        charge. If after 3 months and <span>{Receiver}</span> still hasn't repaid the loan, Middle Man has been authorized to collect the debt using legal means.
                     </p>
                     <div className="signature">
                         <div className="sender">
