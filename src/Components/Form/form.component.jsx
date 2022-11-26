@@ -76,11 +76,11 @@ const Form = ({ form, bs }) => {
 
                         <div className="form-field">
                             <label htmlFor="startDate" className="label-2">Start Date</label>
-                            <input type="date" name="startDate" onChange={onChange} required />
+                            <input type="date" name="startDate" onChange={onChange} required  className="date"/>
                         </div>
                         <div className="form-field">
                             <label htmlFor="dueDate" className="label-2">Due Date</label>
-                            <input type="date" name="dueDate" onChange={onChange} required />
+                            <input type="date" name="dueDate" onChange={onChange} required className="date"/>
                         </div>
                         <div className="select">
                             <label htmlFor="rate" className="label-2">Rate in %</label>

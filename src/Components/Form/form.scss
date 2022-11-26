@@ -59,6 +59,9 @@
     .label-2 {
         font-size: .9rem;
     }
+    .date{
+        width: 100%;
+    }
 
     .select {
         display: flex;
@@ -91,5 +94,5 @@ select {
     border-bottom: 1px solid #45c2b9;
     padding-top: .5rem;
     outline: none;
-    width: 100%;
+    background-color: #fff;
 }
